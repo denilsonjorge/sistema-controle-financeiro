@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+main{
+    max-width: 600px;
+    margin: 30px auto;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.cards .card{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.347);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cards .card h3{
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.cards .card p{
+    font-size: 1.5rem;
+}
+.cards .card p#entrada{
+    color: blue;
+}
+.cards .card p#saida{
+    color: red;
+}
+.form{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.form .form-control{
+    display: flex;
+    flex-direction: column;
+}
+.form .form-control:nth-child(1),
+.form .form-control:nth-child(2){
+    width: 100%;
+}
+.form .form-control input[type=text],
+.form .form-control input[type=number],
+.form .form-control select{
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;  
+}
+.form input[type=submit]{
+    padding: 10px 15px;
+    border: none;
+    background: #4f4fff;
+    border-radius: 8px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+.form input[type=submit]:hover{
+    background: blue;
+}
+.table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.table .thead{
+    margin-bottom: 10px;
+}
+.table th{
+    font-size: 1.3em;
+}
+.table th,
+.table td{
+    padding: 5px;
+}
+.table td .excluir{
+    border: none;
+    background: #ff3f3f;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.table td .excluir:hover{
+    background: red;
+}
